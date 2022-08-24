@@ -1,0 +1,190 @@
+\documentclass[12pt, a4paper]{exam}
+\usepackage{graphicx}
+\usepackage[left=0.8in, top=0.7in, total={6.2in,8in}]{geometry}
+\usepackage[normalem]{ulem}
+\renewcommand\ULthickness{1.0pt}   %%---> For changing thickness of underline
+\setlength\ULdepth{1.3ex}%\maxdimen ---> For changing depth of underline
+
+\begin{document}
+	%\thispagestyle{empty}
+	\noindent
+	\begin{minipage}[l]{0.1\textwidth}
+		\noindent
+		\includegraphics[width=2.4\textwidth]{logo.png}
+	\end{minipage}
+\hfill
+\begin{minipage}[c]{0.8\textwidth}
+	\begin{center}
+		{\large Universidad La Salle \par
+		\small	Ingeniería de Sofware	\par
+		\large	Fundamentos de Lenguajes de Programación	\par
+\small Karlo Pacha, Susana Mancilla  \par
+\small Fecha: Agosto 23, 2022} \par
+	\end{center}
+\end{minipage}
+\par
+\vspace{0.2in}
+\noindent
+\par 
+\vspace{0.15in}
+\noindent
+\centering
+{\small \bfseries 	Lea el libro "Programming Language Pragmatics" Scott (2000), Capítulo 1, Sección 1.1 - 1.6
+y responda las siguientes preguntas: }
+
+\begin{questions}
+	\pointsdroppedatright
+	\question ¿Cuál es la diferencia entre lenguaje de maquina y lenguaje ensamblador?
+	\begin{parts}
+		\part El lenguaje de máquina se ejecuta de forma directa; el lenguaje de ensamblador requiere conversión a código de máquina para ser ejecutado.  \textbf{\droppoints}
+	\end{parts}
+\vspace{0.2in}
+
+
+
+\pointsdroppedatright
+	\question ¿En qué circunstancia un lenguaje de alto nivel es superior al lenguaje ensamblador?
+	\begin{parts}
+		\part Para proyectos grandes, se hace uso de menos instrucciones.  \textbf{\droppoints}
+		\vspace{0.05in}
+	\end{parts}
+\vspace{0.2in}
+
+
+
+\pointsdroppedatright
+	\question  ¿En qué circunstancia un lenguaje ensamblador es superior al lenguaje de alto nivel?
+	\begin{parts}
+		\part Cuando se necesite usar o manipular de manera más directa el hardware.  \textbf{\droppoints}
+		\vspace{0.05in}
+	\end{parts}
+\vspace{0.2in}
+
+
+
+\pointsdroppedatright
+	\question ¿Por qué hay tantos lenguajes de programación?
+	\begin{parts}
+		\part Por la evolución.  \textbf{\droppoints}
+		\vspace{0.05in}
+        \part Prósitos especiales.  \textbf{\droppoints}
+		\vspace{0.05in}
+        \part Preferencia personal.  \textbf{\droppoints}
+		\vspace{0.05in}
+        \part Expresividad.  \textbf{\droppoints}
+		\vspace{0.05in}
+        \part Facilidad de uso para los novatos.  \textbf{\droppoints}
+		\vspace{0.05in}
+        \part Facilidad de implementación.  \textbf{\droppoints}
+		\vspace{0.05in}
+        \part Fuente abierta.  \textbf{\droppoints}
+		\vspace{0.05in}
+        \part Excelentes compiladores.  \textbf{\droppoints}
+		\vspace{0.05in}
+		\part Economía, mecenazgo e inercia.  \textbf{\droppoints}
+	\end{parts}
+\vspace{0.2in}
+
+
+
+\pointsdroppedatright
+	\question Nombre 3 lenguajes en las categorias de von Neumann, funcional y orientado a objetos. Dos lenguajes lógicos y 2 concurrentes.
+	\begin{parts}
+		\part C, Ada, Fortran.  \textbf{\droppoints}
+		\vspace{0.05in}
+        \part Haskell, ML, Lisp.  \textbf{\droppoints}
+		\vspace{0.05in}
+        \part Java, Smalltalk, C++.  \textbf{\droppoints}
+		\vspace{0.05in}
+        \part Prolog, Spreadsheets.  \textbf{\droppoints}
+		\vspace{0.05in}
+		\part Ada, Modula-3.  \textbf{\droppoints}
+	\end{parts}
+\vspace{0.2in}
+
+
+
+\pointsdroppedatright
+	\question ¿Qué distingue a los lenguajes declarativos e imperativos?
+	\begin{parts}
+		\part Su filosofía, uno sigue la secuencia de pasos indicada y otro va directamente al resultado final esperado.  \textbf{\droppoints}
+		\vspace{0.05in}
+	\end{parts}
+\vspace{0.2in}
+
+
+
+\pointsdroppedatright
+	\question ¿Cuál es considerado el primer lenguaje de alto nivel?
+	\begin{parts}
+		\part Fortran.  \textbf{\droppoints}
+		\vspace{0.05in}
+	\end{parts}
+\vspace{0.2in}
+
+
+
+\pointsdroppedatright
+	\question ¿Cuál es considerado el primer lenguaje funcional?
+	\begin{parts}
+		\part Lisp.  \textbf{\droppoints}
+		\vspace{0.05in}
+	\end{parts}
+\vspace{0.2in}
+
+
+
+\pointsdroppedatright
+	\question ¿Por qué los lenguajes concurrentes no estan considerados en la clasificación de Scott (2000) (Figura 1.1).?
+	\begin{parts}
+		\part Debido a que la distinción entre ejecución concurrente y secuencial es ortogonal a las clasificaciones ya existentes. Los lenguajes "concurrentes" no lo son explicitamente.  \textbf{\droppoints}
+		\vspace{0.05in}
+	\end{parts}
+\vspace{0.2in}
+
+
+
+\pointsdroppedatright
+	\question Lista las principales fases de un compilador y describe la función de cada fase.
+	\begin{parts}
+		\part Análisis léxico y sintáctico: Reconocimiento de los elementos, formación y estructura del lenguaje.  \textbf{\droppoints}
+		\vspace{0.05in}
+        \part Análisis semántico y generación de código intermedio: Revisión de la coherencia de lo ingresado, luego se transforma a código para una máquina abstracta.  \textbf{\droppoints}
+		\vspace{0.05in}
+        \part Generación de código objetivo: Transformación del código intermedio en código objeto.  \textbf{\droppoints}
+		\vspace{0.05in}
+		\part Mejora del código: Optimización del código, es una fase opcional. \textbf{\droppoints}
+	\end{parts}
+\vspace{0.2in}
+
+
+
+\pointsdroppedatright
+	\question ¿En qué circunstancias tiene sentido que un compilador pase o revise el código varias veces?
+	\begin{parts}
+		\part Cuando la cantidad de instrucciones son muy altas y es necesario una optimización.  \textbf{\droppoints}
+		\vspace{0.05in}
+	\end{parts}
+\vspace{0.2in}
+
+
+
+\pointsdroppedatright
+	\question ¿Cuál es el propósito de la tabla de símbolos en un compilador?
+	\begin{parts}
+		\part La traducción de la entrada.  \textbf{\droppoints}
+		\vspace{0.05in}
+	\end{parts}
+\vspace{0.2in}
+
+
+
+	\pointsdroppedatright
+	\question ¿En la actualidad, que programa es mas eficiente, uno desarrollado desde cero en ensamblador o uno generado por un compilador?
+	\begin{parts}
+		\part Uno generado por compilador, actualmente se dispone de recursos suficientes para no tener que limitarnos tanto, añadiendo además que los proyectos son mucho más grandes y hacer algo tan cercano al hardware sería costoso para las personas.  \textbf{\droppoints}
+		\vspace{0.05in}
+	\end{parts}
+\end{questions}
+\vspace{0.75in}
+\end{document}
